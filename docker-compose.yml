@@ -9,6 +9,6 @@ services:
         IMAGE_NAME: ${IMAGE_NAME}
         REQUIREMENTS_PATH: ${REQUIREMENTS_PATH}
     volumes:
-      - ${VOLUME}:/${VOLUME}
+      - ${VOLUME}:${VOLUME_CONTAINER}
     tty: true
     stdin_open: true
